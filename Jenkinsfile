@@ -11,7 +11,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project...'
-                bat 'mvn -v'
                 bat 'mvn clean install'
             }
         }
@@ -19,8 +18,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Running jar...'
-                bat 'dir target'
-                bat 'java -jar target\\*.jar'
+                bat 'java -jar target\\jenkins-calc-0.0.1-SNAPSHOT.jar'
             }
         }
     }
