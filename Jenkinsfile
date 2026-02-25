@@ -17,8 +17,8 @@ pipeline {
 
         stage('Run') {
             steps {
-                echo 'Running jar...'
-                bat 'java -jar target\\jenkins-calc-0.0.1-SNAPSHOT.jar'
+                echo 'Running jar in background...'
+                bat 'start /B java -jar target\\jenkins-calc-0.0.1-SNAPSHOT.jar'
             }
         }
     }
