@@ -155,7 +155,7 @@ GitHub hook trigger for GITScm polling
 
 ### Webhook Delivery Success
 
-![Webhook Success](images/webhook-success.png)
+![Webhook Success](images/webhook-succeess.png)
 
 ------------------------------------------------------------------------
 
