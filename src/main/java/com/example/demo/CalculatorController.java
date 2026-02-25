@@ -15,7 +15,7 @@ public class CalculatorController {
         return a + b;
     }
 
-    @GetMapping("/sub")
+    @GetMapping("/sub") //comments added for changes in code
     public int sub(@RequestParam int a, @RequestParam int b) {
         return a - b;
     }
