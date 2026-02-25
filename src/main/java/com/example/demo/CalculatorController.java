@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/calc")
 public class CalculatorController {
 
-    @GetMapping("/add")
+    @GetMapping("/add") //comments added for changes in code
     public double add(@RequestParam double a, @RequestParam double b) {
         return a + b;
     }
